@@ -34,7 +34,13 @@ module.exports = function (grunt) {
             js:{
                 src: "./register.js",
                 dest: "./dist/register.js"
-            }
+            },
+            image: {
+                expand: true,
+                cwd: './',
+                src: 'image/*.*',
+                dest: 'dist/'
+              }
         }
 
     });
